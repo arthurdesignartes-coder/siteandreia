@@ -12,7 +12,7 @@
   --white:#fffefb;
   --shadow:0 18px 50px -20px rgba(52,73,47,.32);
   --radius:22px;
-  --serif:"Cormorant Garamond",Georgia,serif;
+  --serif:"Playfair Display",Georgia,serif;
   --sans:"Jost",system-ui,sans-serif;
 }
 html{scroll-behavior:smooth}
