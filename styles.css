@@ -104,6 +104,27 @@ h1 em{font-style:italic;color:var(--green-deep)}
 .service-card p{color:var(--olive);font-size:.92rem;padding:.5rem .6rem 0;flex:1}
 .service-card__price{margin:1.1rem .6rem 0;font-weight:500;color:var(--green-deep);font-size:.9rem;letter-spacing:.03em}
 
+/* ===== DEPILAÇÃO A LASER ===== */
+.laser{padding:6rem 0;background:radial-gradient(120% 120% at 100% 0%,var(--green-deep),var(--forest));color:var(--cream)}
+.laser__inner{display:grid;grid-template-columns:.95fr 1.05fr;gap:4rem;align-items:center}
+.laser__media{position:relative}
+.laser__media img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover;width:100%}
+.laser__tag{position:absolute;bottom:20px;right:-16px;background:var(--cream);color:var(--forest);padding:.9rem 1.2rem;border-radius:14px;box-shadow:var(--shadow);text-align:center}
+.laser__tag strong{font-family:var(--serif);font-size:1.2rem;display:block;line-height:1}
+.laser__tag span{font-size:.72rem;letter-spacing:.05em;color:var(--green-deep)}
+.laser__content .eyebrow{color:var(--green)}
+.laser__content h2{color:var(--cream)}
+.laser__lead{margin:1rem 0 1.8rem;opacity:.92;max-width:34rem}
+.laser__benefits{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.8rem 1.5rem;margin-bottom:2rem}
+.laser__benefits li{font-size:.92rem;opacity:.95;display:flex;gap:.5rem;align-items:baseline}
+.laser__benefits li span{color:var(--green);font-weight:600}
+.laser__benefits strong{font-weight:500}
+.laser__zones{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2rem}
+.laser__zones span{font-size:.78rem;letter-spacing:.04em;padding:.4rem .9rem;border:1px solid rgba(244,247,241,.35);border-radius:999px}
+.laser__cta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.laser__price{font-size:.9rem;opacity:.9}
+.laser__price strong{font-family:var(--serif);font-size:1.2rem}
+
 /* ===== FEATURES ===== */
 .features{padding:5rem 0}
 .features__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
@@ -189,14 +210,15 @@ h1 em{font-style:italic;color:var(--green-deep)}
   .nav,.header__cta{display:none}
   .nav-toggle{display:flex}
   .nav.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--cream);padding:1.5rem 2rem;gap:1.2rem;box-shadow:var(--shadow)}
-  .hero__inner,.about__inner,.contact__inner{grid-template-columns:1fr;gap:2.5rem}
+  .hero__inner,.about__inner,.contact__inner,.laser__inner{grid-template-columns:1fr;gap:2.5rem}
+  .laser__media{max-width:420px;margin:0 auto}
   .hero{padding-top:8rem}
   .hero__media{max-width:420px;margin:0 auto}
   .services__grid,.gallery__grid,.testimonials__grid{grid-template-columns:repeat(2,1fr)}
   .features__grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:600px){
-  .services__grid,.gallery__grid,.testimonials__grid,.features__grid{grid-template-columns:1fr}
+  .services__grid,.gallery__grid,.testimonials__grid,.features__grid,.laser__benefits{grid-template-columns:1fr}
   .hero__stats{gap:1.5rem}
   .footer__inner{flex-direction:column;text-align:center}
   .cta-banner__inner{padding:3rem 1.5rem}
